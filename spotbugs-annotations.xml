@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FindBugsFilter>
+    <!-- Suppress EI_EXPOSE_REP and EI_EXPOSE_REP2 warnings -->
+    <Match>
+        <Bug pattern="EI_EXPOSE_REP" />
+        <Bug pattern="EI_EXPOSE_REP2" />
+        <Class name="com.employeemanagement.backend.dto.EmployeeDto" />
+        <Class name="com.employeemanagement.backend.dto.ProjectDto" />
+        <Class name="com.employeemanagement.backend.dto.ResponseAllManagerDto" />
+        <Class name="com.employeemanagement.backend.entity.Employee" />
+        <Class name="com.employeemanagement.backend.entity.Project" />
+        <Method name="getEmpSkills" />
+        <Method name="setEmpSkills" />
+        <Method name="getSkills" />
+        <Method name="setSkills" />
+    </Match>
+</FindBugsFilter>
